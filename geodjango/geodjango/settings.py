@@ -131,7 +131,7 @@ STATIC_URL = '/static/'
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
-    'EXCEPTION_HANDLER': 'geodjango.exception_handler.custom_exception_handler',
+    'EXCEPTION_HANDLER': 'rest_framework.views.exception_handler',
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny'
     ]
